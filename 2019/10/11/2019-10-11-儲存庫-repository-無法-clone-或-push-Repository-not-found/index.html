@@ -62,7 +62,7 @@
 <meta property="og:locale" content="zh-tw">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found-1.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found-2.png">
-<meta property="og:updated_time" content="2019-10-14T09:09:41.468Z">
+<meta property="og:updated_time" content="2019-10-23T02:50:29.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found-1.png">
   <link rel="canonical" href="http://yoursite.com/2019/10/11/2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found/">
@@ -220,7 +220,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/11/2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Gimmy">
       <meta itemprop="description" content="">
     </span>
@@ -247,7 +247,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-14 17:09:41" itemprop="dateModified" datetime="2019-10-14T17:09:41+08:00">2019-10-14</time>
+                <time title="Modified: 2019-10-23 10:50:29" itemprop="dateModified" datetime="2019-10-23T10:50:29+08:00">2019-10-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,7 +287,7 @@
 
       
         <p>今年 2019 年 Github 可以免費使用私人儲存庫囉！機會難得一定要嘗試看看，於是自己建立了私人儲存庫，卻遇到無法 clone 或 push 的情形，要怎麼解決呢？</p>
-<!-- toc -->
+<!-- TOC -->
 
 <h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><a id="more"></a>
 
@@ -299,10 +299,10 @@
 
 </li>
 </ol>
-<h3 id="二、HTTPS-和-SSH-二擇一即可"><a href="#二、HTTPS-和-SSH-二擇一即可" class="headerlink" title="二、HTTPS (和 SSH 二擇一即可)"></a>二、HTTPS (和 SSH 二擇一即可)</h3><p><code>git clone https://&lt;Github名稱&gt;:&lt;Github密碼&gt;@github.com/path_to/myRepo.git</code></p>
+<h3 id="二、HTTPS-和-SSH-二擇一即可"><a href="#二、HTTPS-和-SSH-二擇一即可" class="headerlink" title="二、HTTPS (和 SSH 二擇一即可)"></a>二、HTTPS (和 SSH 二擇一即可)</h3><p><code>git clone https://&lt;Github名稱&gt;:&lt;Github密碼&gt;@github.com/path_to/TestPrivate.git</code></p>
 <p><img src="/images/2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found-1.png" alt="HTTPS 解決方法1"></p>
 <p>以上上面的圖為例，就會變成輸入成這樣</p>
-<p><code>git clone https://LTK228:[Github的密碼]@github/LTK228/MyRepo.git</code></p>
+<p><code>git clone https://LTK228:[Github的密碼]@github/LTK228/TestPrivate.git</code></p>
 <p><img src="/images/2019-10-11-%E5%84%B2%E5%AD%98%E5%BA%AB-repository-%E7%84%A1%E6%B3%95-clone-%E6%88%96-push-Repository-not-found-2.png" alt="HTTPS 解決方法2"></p>
 <h3 id="三、SSH-和-HTTPS-二擇一即可"><a href="#三、SSH-和-HTTPS-二擇一即可" class="headerlink" title="三、SSH (和 HTTPS 二擇一即可)"></a>三、SSH (和 HTTPS 二擇一即可)</h3><h4 id="1-確定-Git-有輸入身份"><a href="#1-確定-Git-有輸入身份" class="headerlink" title="1. 確定 Git 有輸入身份"></a>1. 確定 Git 有輸入身份</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"yourname"</span>　　   　// 輸入名字</span><br><span class="line">git config --global user.email <span class="string">"your@email.com"</span> // 輸入信箱</span><br><span class="line">git config --list  　　　　　　　　　　　　　  　 　 // 檢查資料</span><br></pre></td></tr></table></figure>
 <h4 id="2-刪除-known-hosts"><a href="#2-刪除-known-hosts" class="headerlink" title="2. 刪除 known_hosts"></a>2. 刪除 known_hosts</h4><p>顯示隱藏資料 → 找到 .ssh → 刪除 known_hosts</p>
@@ -348,14 +348,14 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/10/10/2019-10-10-hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
-                </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+                <a href="/2019/10/16/2019-10-16-%E9%82%8F%E8%BC%AF%E8%A1%A8%E9%81%94%E5%8A%9B%20%E2%80%93%20%E5%A4%A7%E5%AD%B8%E5%BF%85%E4%BF%AE%E7%9A%84%E8%AA%AA%E8%A9%B1%E8%AA%B2/" rel="prev" title="邏輯表達力 – 大學必修的說話課">
+                  邏輯表達力 – 大學必修的說話課 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
       </footer>
@@ -411,7 +411,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="site-author-image" itemprop="image" alt="Gimmy"
-    src="/images/avatar.jpeg">
+    src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Gimmy</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -425,12 +425,12 @@
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
